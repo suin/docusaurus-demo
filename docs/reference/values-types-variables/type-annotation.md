@@ -3,9 +3,9 @@ sidebar_label: 変数宣言の型注釈
 tags: [型注釈]
 ---
 
-# 変数宣言の型注釈 (type annotation)
+# 変数宣言の型注釈 （type annotation）
 
-TypeScriptでは変数宣言するときに、その変数にどんな値が代入可能かを指定できます。その指定のことを型注釈\(type annotation; 型アノテーション\)と言います。変数宣言の型注釈は、次のように変数名の右に型を書きます。
+TypeScriptでは変数宣言するときに、その変数にどんな値が代入可能かを指定できます。その指定のことを型注釈\（type annotation; 型アノテーション\）と言います。変数宣言の型注釈は、次のように変数名の右に型を書きます。
 
 ```typescript
 const num: number = 123;
