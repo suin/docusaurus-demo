@@ -40,6 +40,7 @@ module.exports = {
             "reference/values-types-variables/type-annotation",
             "reference/values-types-variables/vars-problems",
             "reference/values-types-variables/type-inference",
+            "reference/values-types-variables/type-assertion-as",
           ]
         }
       ],
