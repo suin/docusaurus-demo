@@ -1,4 +1,4 @@
-name: 文章校正
+name: textlint
 on: [pull_request]
 jobs:
   Textlint:
