@@ -21,10 +21,7 @@ module.exports = {
       type: "category",
       label: "TypeScriptのあらまし",
       collapsed: false,
-      items: [
-        "overview/README",
-        "overview/features",
-      ],
+      items: ["overview/README", "overview/features"],
     },
     {
       type: "category",
@@ -40,9 +37,9 @@ module.exports = {
             "reference/values-types-variables/type-annotation",
             "reference/values-types-variables/vars-problems",
             "reference/values-types-variables/type-inference",
-          ]
-        }
+          ],
+        },
       ],
-    }
+    },
   ],
 };
