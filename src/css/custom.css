@@ -4,16 +4,59 @@
  * work well for content-centric websites.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #007acc;
+  --ifm-color-primary-dark: #006eb8;
+  --ifm-color-primary-darker: #0068ad;
+  --ifm-color-primary-darkest: #00558f;
+  --ifm-color-primary-light: #0086e0;
+  --ifm-color-primary-lighter: #008ceb;
+  --ifm-color-primary-lightest: #0a9dff;
   --ifm-code-font-size: 95%;
+  --ifm-font-size-base: 17px;
+  --ifm-code-padding-horizontal: 0.1rem;
+  --ifm-code-padding-vertical: 0;
+  --ifm-line-height-base: 1.8;
+  --ifm-font-family-base: 'Noto Sans JP', sans-serif;
+}
+
+.markdown h1:first-child {
+  --ifm-h1-font-size: 2rem;
+  font-weight: 700;
+}
+
+.markdown > h2 {
+  --ifm-h2-font-size: 1.5rem;
+}
+
+.markdown > h3 {
+  --ifm-h3-font-size: 1.25rem;
+}
+
+.markdown {
+  font-weight: 400;
+}
+
+.markdown p {
+  text-align: justify;
+  word-wrap: break-word;
+  letter-spacing: 0.01rem;
+}
+
+code {
+  border-color: var(--ifm-code-background);
+  border-radius: 0;
+}
+
+p > code {
+  margin: 0 var(--ifm-code-padding-horizontal);
+}
+
+.markdown .footnotes {
+  font-size: 0.85rem;
 }
 
 .docusaurus-highlight-code-line {
@@ -26,3 +69,4 @@
 html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
