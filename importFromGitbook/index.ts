@@ -158,7 +158,7 @@ function createSidebar(nodes: DocusaurusNode[]) {
             : {}),
         } as Partial<SidebarItemCategory> as SidebarItemCategory);
       } else {
-        sidebar.push(node.target as any);
+        sidebar.push(node.target.replace(/\.md$/, "") as any);
       }
     }
 
@@ -189,7 +189,7 @@ module.exports = {
 };
 `;
   const c = prettier.format(code);
-  fs.writeFileSync("sidebar.js", c);
+  fs.writeFileSync("sidebars.js", c);
 }
 
 function createAssets(gitbookDir: string) {

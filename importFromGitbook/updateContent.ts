@@ -92,6 +92,12 @@ function normalizeMarkdown(file: File) {
   const prettierIgnores = ["docs/reference/functions/arrow-functions.md"];
   const tree = fromMarkdown(file.content);
   let newContent = toMarkdown(tree, { listItemIndent: "one", bullet: "-" });
+  newContent = newContent.replaceAll(/\\$/gm, "");
+  newContent = newContent.replaceAll(/(?!`)(?:\\`){2,}/g, "`` ` ``");
+  newContent = newContent.replaceAll(
+    /\\<(.+?)>/g,
+    (substring, arg) => `&lt;${arg}>`
+  );
   if (!prettierIgnores.includes(file.filename)) {
     newContent = prettier.format(newContent, {
       parser: "markdown-nocjsp", // prettier本家のMarkdownパーサーは英単語の前後にスペースを入れる問題があるので、この問題を対策がされたパーサーを用いています。
