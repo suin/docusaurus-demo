@@ -10,7 +10,6 @@ export default function TweetILearned({
     .filter((child): child is string => typeof child === "string")
     .join("");
   texts += "\n\n『サバイバルTypeScript』より";
-  console.log(texts);
   return (
     <div className="admonition admonition-tip alert alert--info">
       <div className="admonition-heading">
