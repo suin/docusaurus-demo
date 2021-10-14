@@ -77,25 +77,23 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   counter-reset: line-number;
 }
 
-.prism-code .token-line::marker {
-  color: var(--ifm-color-gray-600);
-  content: counter(line-number);
-  font-size: 0.8rem;
-}
-
-.prism-code .token-line {
+.prism-code .token-line::before {
   counter-increment: line-number;
-  display: list-item;
-  padding-left: var(--ifm-pre-padding);
-  margin-left: var(--ifm-global-spacing);
+  content: counter(line-number);
+  margin-right: 1rem;
+  opacity: 0.4;
+  font-size: 0.85rem;
+  user-select: none;
+  min-width: 1rem;
+  display: inline-block;
+  position: sticky;
 }
 
-.prism-code .token-line:only-child,
-.prism-code .token-line:first-child:nth-last-child(2),
-.prism-code .token-line:first-child:nth-last-child(2) ~ .token-line,
-.prism-code .token-line:first-child:nth-last-child(3),
-.prism-code .token-line:first-child:nth-last-child(3) ~ .token-line {
-  display: inherit;
-  padding-left: 0;
-  margin-left: 0;
+/* 3行以内のコードブロックは行番号を表示しないスタイル */
+.prism-code .token-line:only-child::before,
+.prism-code .token-line:first-child:nth-last-child(2)::before,
+.prism-code .token-line:first-child:nth-last-child(2) ~ .token-line::before,
+.prism-code .token-line:first-child:nth-last-child(3)::before,
+.prism-code .token-line:first-child:nth-last-child(3) ~ .token-line::before {
+  display: none;
 }
