@@ -33,9 +33,9 @@ mkdir -p docs/カテゴリ名/サブカテゴリ名
 touch docs/カテゴリ名/サブカテゴリ名/new-page.md
 ```
 
-[sidebars.js](./sidebars.js)に新規ページへのパスを追加します。パスには拡張子`.md`を含めません。
+`sidebars.js`に新規ページへのパスを追加します。パスには拡張子`.md`を含めません。
 
-```js
+```js title="sidebars.js"
 module.exports = {
   // ...
   tutorialSidebar: [
