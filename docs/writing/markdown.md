@@ -56,7 +56,7 @@ description: TypeScriptでアロー関数を定義する方法
 サイト内リンクはMarkdownファイルパスを**相対パス**で書きます。
 
 ```markdown
-詳細は[関数](../references/functions.md)
+詳細は[関数](../references/functions.md)をご覧ください。
 ```
 
 ### 内部リンクブロック

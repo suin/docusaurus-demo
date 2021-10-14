@@ -3,7 +3,8 @@
   "extends": "@tsconfig/docusaurus/tsconfig.json",
   "compilerOptions": {
     "target": "ES2015",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "moduleResolution": "node"
   },
   "include": ["src/"]
 }
