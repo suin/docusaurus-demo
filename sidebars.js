@@ -42,4 +42,5 @@ module.exports = {
       ],
     },
   ],
+  writerSidebar: ["writing/getting-started", "writing/markdown"],
 };

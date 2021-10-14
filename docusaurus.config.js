@@ -49,38 +49,43 @@ const { pageRef } = require("./src/remark/pageRef");
         navbar: {
           title: "サバイバルTypeScript",
           logo: {
-            alt: "My Site Logo",
+            alt: "サバイバルTypeScript",
             src: "img/logo.svg",
           },
           items: [
             // {
-            //   type: 'doc',
-            //   docId: 'intro',
-            //   position: 'left',
-            //   label: 'Tutorial',
+            //   type: "doc",
+            //   docId: "intro",
+            //   position: "left",
+            //   label: "Tutorial",
             // },
             // {to: '/blog', label: 'Blog', position: 'left'},
-            // {
-            //   href: 'https://github.com/facebook/docusaurus',
-            //   label: 'GitHub',
-            //   position: 'right',
-            // },
+            {
+              href: "https://github.com/facebook/docusaurus",
+              label: "GitHub",
+              position: "right",
+            },
           ],
         },
         footer: {
           style: "dark",
           links: [
-            // {
-            //   title: "Docs",
-            //   items: [
-            //     {
-            //       label: "Tutorial",
-            //       to: "/docs/intro",
-            //     },
-            //   ],
-            // },
             {
-              title: "Community",
+              title: "サバイバルTypeScript",
+              items: [
+                { label: "第1章 はじめに", to: "/" },
+                { label: "第2章 TypeScriptのあらまし", to: "/" },
+                { label: "第3章 作って学ぶTypeScript", to: "/" },
+                { label: "第4章 読んで学ぶTypeScript", to: "/" },
+                { label: "第5章 Tips", to: "/" },
+              ],
+            },
+            {
+              title: "コントリビューション",
+              items: [{ label: "Markdown", to: "/writing/markdown" }],
+            },
+            {
+              title: "コミュニティー",
               items: [
                 {
                   label: "Stack Overflow",
@@ -115,7 +120,7 @@ const { pageRef } = require("./src/remark/pageRef");
         prism: {
           theme: lightCodeTheme,
           darkTheme: darkCodeTheme,
-          additionalLanguages: ["java", "php"],
+          additionalLanguages: ["java", "php", "ruby", "shell-session"],
         },
       }),
     i18n: {

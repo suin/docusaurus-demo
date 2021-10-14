@@ -8,3 +8,4 @@
 #
 /.docusaurus
 /build
+pnpm-lock.yaml

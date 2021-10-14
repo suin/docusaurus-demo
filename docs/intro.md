@@ -1,6 +1,7 @@
 ---
 slug: /
 ---
+
 # Markdownスタイリングテスト
 
 Markdownスタイリングテストです。
@@ -8,10 +9,15 @@ Markdownスタイリングテストです。
 ## 見出しのテスト
 
 # 見出し1
+
 ## 見出し2
+
 ### 見出し3
+
 #### 見出し4
+
 ##### 見出し5
+
 ###### 見出し6
 
 ## 段落のテスト
@@ -22,7 +28,7 @@ Markdownスタイリングテストです。
 
 それでこの御二方おふたかたの神樣は天からの階段にお立ちになつて、その矛ほこをさしおろして下の世界をかき廻され、海水を音を立ててかき廻して引きあげられた時に、矛の先から滴したゝる海水が、積つて島となりました。これがオノゴロ島です。その島にお降くだりになつて、大きな柱を立て、大きな御殿ごてんをお建たてになりました。
 
-そこでイザナギの命が、イザナミの女神に「あなたのからだは、どんなふうにできていますか」と、お尋ねになりましたので、「わたくしのからだは、できあがつて、でききらない所が一か所あります」とお答えになりました。そこでイザナギの命の仰せられるには「わたしのからだは、できあがつて、でき過ぎた所が一か所ある。
+そこでイザナギの命が、イザナミの女神に「あなたのからだは、どんなふうにできていますか」と、お尋ねになりましたので、「わたくしのからだは、できあがつて、でききらない所が一箇所あります」とお答えになりました。そこでイザナギの命の仰せられるには「わたしのからだは、できあがつて、でき過ぎた所が一箇所ある。
 
 だからわたしのでき過ぎた所をあなたのでききらない所にさして國を生み出そうと思うがどうだろう」と仰せられたので、イザナミの命が「それがいいでしよう」とお答えになりました。そこでイザナギの命が「そんならわたしとあなたが、この太い柱を廻りあつて、結婚をしよう」と仰せられてこのように約束して仰せられるには「あなたは右からお廻りなさい。わたしは左から廻つてあいましよう」と約束してお廻りになる時に、イザナミの命が先に「ほんとうにりつぱな青年ですね」といわれ、その後あとでイザナギの命が「ほんとうに美うつくしいお孃じようさんですね」といわれました。
 
@@ -45,18 +51,17 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 ## 強調・太字・取り消しのテスト
 
 *強調*は斜体ではなく太めの文字で表示されること。
-**太字**は更に太い文字で表示されること。
+**太字**はさらに太い文字で表示されること。
 ~~取り消し~~は取り消し線が文字の上に表示されること。
 
 ✅組み合わせられること。
 
-強調+太字: *強調**太字**強調*
+強調+太字: _強調**太字**強調_
 太字+強調: **太字*強調*太字**
 取り消し+強調: ~~取り消し*強調*取り消し~~
-強調+取り消し: *強調~~取り消し~~強調*
+強調+取り消し: _強調~~取り消し~~強調_
 取り消し+太字: ~~取り消し**太字**取り消し~~
 太字+取り消し: **太字~~取り消し~~太字**
-
 
 ## `<small>`のテスト
 
@@ -80,7 +85,7 @@ JavaScriptの`boolean`、`number`、`string`はプリミティブ型ですが、
 
 ✅強調されたインラインコードは太字で表示されること。
 
-`<em>` → *`code`*
+`<em>` → _`code`_
 `<strong>` → **`code`**
 
 ✅取り消しされたインラインコードはコードの上に取り消し線が表示されること。
@@ -91,49 +96,48 @@ JavaScriptの`boolean`、`number`、`string`はプリミティブ型ですが、
 
 ✅強調された取り消しされたインラインコードは太字で表示され、かつ、取り消し線が表示されること。
 
-`<em>` + `<strike>` → *~~`code`~~*
-`<strike>` + `<em>` → ~~*`code`*~~
+`<em>` + `<strike>` → _~~`code`~~_
+`<strike>` + `<em>` → ~~_`code`_~~
 `<strong>` + `<strike>` → **~~`code`~~**
 `<strike>` + `<strong>` → ~~**`code`**~~
-
 
 ## リストのテスト
 
 ✅リストはレベルに応じてバレットが変化すること。レベル1 → ●、レベル2→○、レベル3以上→■。
 ✅レベルに応じてインデントされること。
 
-* あああ
-    * AAA
-        * ααα
-        * βββ
-        * γγγ
-            * 111
-            * 222
-            * 333
-    * BBB
-    * CCC
-* いいい
-    * AAA
-    * BBB
-    * CCC
-* ううう
+- あああ
+  - AAA
+    - ααα
+    - βββ
+    - γγγ
+      - 111
+      - 222
+      - 333
+  - BBB
+  - CCC
+- いいい
+  - AAA
+  - BBB
+  - CCC
+- ううう
 
-✅順序付きリストは`1.`,  `2.`, `3.`のように連番になること。
+✅順序付きリストは`1.`, `2.`, `3.`のように連番になること。
 
 1. あああ
-    1. AAA
-        1. ααα
-        1. βββ
-        1. γγγ
-            1. 111
-            1. 222
-            1. 333
-    1. BBB
-    1. CCC
+   1. AAA
+      1. ααα
+      1. βββ
+      1. γγγ
+         1. 111
+         1. 222
+         1. 333
+   1. BBB
+   1. CCC
 1. いいい
-    1. AAA
-    1. BBB
-    1. CCC
+   1. AAA
+   1. BBB
+   1. CCC
 1. ううう
 
 ## 絵文字のテスト
@@ -153,7 +157,6 @@ JavaScriptの`boolean`、`number`、`string`はプリミティブ型ですが、
 ✅マウスを乗せると下線が表示されること。
 リンクコード [`toString`](http://example.com) を開く。
 
-
 ## 区切り線のテスト
 
 ✅区切り線が表示されること。
@@ -170,18 +173,18 @@ JavaScriptの`boolean`、`number`、`string`はプリミティブ型ですが、
 ✅ヘッダー行は太字で表示されること。
 ✅奇数行は背景色が設定されること。
 
-| アイテム名 | 値段 |
-| --- | --- |
+| アイテム名 | 値段  |
+| ---------- | ----- |
 | いぬのえさ | 250円 |
 | とりのえさ | 128円 |
 
 ✅左寄せ、中央揃え、右寄せで表示されること。
 
-| アイテム名 | 値段 | 備考 |
-| --- | :---: | ---: |
-| いぬのえさ | 250円 | 税込み |
-| とりのえさ | 128円 | 税込み |
-| (左寄せ) | (中央揃え) | (右寄せ) |
+| アイテム名 |     値段     |       備考 |
+| ---------- | :----------: | ---------: |
+| いぬのえさ |    250円     |     税込み |
+| とりのえさ |    128円     |     税込み |
+| （左寄せ） | （中央揃え） | （右寄せ） |
 
 ## 引用のテスト
 
@@ -194,10 +197,15 @@ JavaScriptの`boolean`、`number`、`string`はプリミティブ型ですが、
 ✅引用中の見出しの文字色は地の文より薄い色合いが使われること。
 
 > # 見出し1
+>
 > ## 見出し2
+>
 > ### 見出し3
+>
 > #### 見出し4
+>
 > ##### 見出し5
+>
 > ###### 見出し6
 
 ✅引用中の強調・太字・取り消し線・コード。
@@ -209,9 +217,9 @@ JavaScriptの`boolean`、`number`、`string`はプリミティブ型ですが、
 
 ✅引用中のリスト。
 
-> * あああ
-> * いいい
-> * ううう
+> - あああ
+> - いいい
+> - ううう
 
 > 1. あああ
 > 2. いいい
@@ -225,13 +233,12 @@ JavaScriptの`boolean`、`number`、`string`はプリミティブ型ですが、
 
 </details>
 
-
 ## タスクリストのテスト
 
 ✅バレットは表示されないこと。
 
 - [ ] TODO
-    - [ ] TODO
+  - [ ] TODO
 - [x] DONE
 
 ## 画像のテスト
@@ -251,7 +258,6 @@ Bootstrapを導入すると<img width="81" src="https://img.esa.io/uploads/produ
 ✅横長で表示領域幅を超えるサイズの画像は、表示領域幅に合わせて縮小表示されること。
 
 ![](https://via.placeholder.com/2000x100)
-
 
 ✅`<figure>`を使った画像は、**中央揃え**になること。
 ✅画像のキャプション(`<figcaption>`)は、**中央揃え**になること。
@@ -299,7 +305,7 @@ function addOldSchool(x, y) {
 
 // You can move the name of the function to a variable
 // name also
-const anonymousOldSchoolFunction = function(x, y) {
+const anonymousOldSchoolFunction = function (x, y) {
   return x + y;
 };
 
@@ -316,20 +322,34 @@ const addFunction = (x, y) => {
  * Represents the completion of an asynchronous operation
  */
 interface Promise<T> {
-    /**
-     * Attaches callbacks for the resolution and/or rejection of the Promise.
-     * @param onfulfilled The callback to execute when the Promise is resolved.
-     * @param onrejected The callback to execute when the Promise is rejected.
-     * @returns A Promise for the completion of which ever callback is executed.
-     */
-    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): Promise<TResult1 | TResult2>;
+  /**
+   * Attaches callbacks for the resolution and/or rejection of the Promise.
+   * @param onfulfilled The callback to execute when the Promise is resolved.
+   * @param onrejected The callback to execute when the Promise is rejected.
+   * @returns A Promise for the completion of which ever callback is executed.
+   */
+  then<TResult1 = T, TResult2 = never>(
+    onfulfilled?:
+      | ((value: T) => TResult1 | PromiseLike<TResult1>)
+      | undefined
+      | null,
+    onrejected?:
+      | ((reason: any) => TResult2 | PromiseLike<TResult2>)
+      | undefined
+      | null
+  ): Promise<TResult1 | TResult2>;
 
-    /**
-     * Attaches a callback for only the rejection of the Promise.
-     * @param onrejected The callback to execute when the Promise is rejected.
-     * @returns A Promise for the completion of the callback.
-     */
-    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): Promise<T | TResult>;
+  /**
+   * Attaches a callback for only the rejection of the Promise.
+   * @param onrejected The callback to execute when the Promise is rejected.
+   * @returns A Promise for the completion of the callback.
+   */
+  catch<TResult = never>(
+    onrejected?:
+      | ((reason: any) => TResult | PromiseLike<TResult>)
+      | undefined
+      | null
+  ): Promise<T | TResult>;
 }
 ```
 
@@ -381,7 +401,6 @@ console.log(1);
 ✅`<kbd>`は等幅フォントで表示されること。
 
 保存するには<kbd>⌘</kbd> <kbd>S</kbd>を押してください。
-
 
 ## 説明型リストのテスト
 

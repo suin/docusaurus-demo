@@ -12,6 +12,14 @@ rules:
 #     wordBoundary: false
 #   specs: []
   - expected: Markdown
+    pattern: /markdown(?!lint)/i
+    specs:
+      - from: Markdown
+        to: Markdown
+      - from: markdown
+        to: Markdown
+      - from: markdownlint
+        to: markdownlint
 # 正規表現で置換もできる
   - expected: JavaScript
     patterns:
